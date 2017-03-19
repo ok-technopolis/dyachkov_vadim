@@ -2,25 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Todo app</title>
 </head>
 <body>
 <div class="todos-header">
-    <h1 class="todos-title">todos</h1>
+    <span class="todos-title">todos</span>
 </div>
 <div class="todos-main">
     <div class="todos-add">
         <button class="todo-add_select-all"
                 aria-label="Отметить все как выполненные">
         </button>
-        <input class="todo-add_input" type="text" placeholder="What needs to be done?"
+        <input type="text" class="todo-add_input" placeholder="What needs to be done?"
                aria-label="Добавить todo"/>
     </div>
     <div class="todos-list">
         <div class="todo-item">
-            <textarea class="todo-item_text">
-                HTML
-            </textarea>
+            <textarea class="todo-item_text">HTML</textarea>
             <input type="checkbox" class="todo-item_complete"
                    aria-label="Отметить как выполненное"/>
             <button class="todo-item_remove"
@@ -28,9 +27,7 @@
             </button>
         </div>
         <div class="todo-item __ready">
-            <textarea class="todo-item_text">
-                CSS
-            </textarea>
+            <textarea class="todo-item_text">CSS</textarea>
             <input type="checkbox" checked="checked" class="todo-item_complete"
                    aria-label="Отметить todo как невыполненное"/>
             <button class="todo-item_remove"
@@ -38,9 +35,7 @@
             </button>
         </div>
         <div class="todo-item">
-            <textarea class="todo-item_text">
-                JS
-            </textarea>
+            <textarea class="todo-item_text">JS</textarea>
             <input type="checkbox" class="todo-item_complete"
                    aria-label="Отметить todo как выполненное"/>
             <button class="todo-item_remove"
@@ -48,9 +43,7 @@
             </button>
         </div>
         <div class="todo-item">
-            <textarea class="todo-item_text">
-                JS tools
-            </textarea>
+            <textarea class="todo-item_text">JS tools</textarea>
             <input type="checkbox" class="todo-item_complete"
                    aria-label="Отметить todo как выполненное"/>
             <button class="todo-item_remove"
@@ -63,7 +56,7 @@
              aria-label="Количество невыполненных todo">
             3 items left
         </div>
-        <div class="todos-filters">
+        <div class="todos-filtrs">
             <button class="todos-filter __active" data-filter="all"
                     aria-label="Показать все">
                 All
