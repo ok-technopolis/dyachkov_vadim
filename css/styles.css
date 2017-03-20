@@ -4,31 +4,39 @@ body {
     font-family: "Arial", sans-serif;
 }
 
+.todos-header {
+    margin-bottom: -8px;
+}
+
 .todos-header .todos-title {
     font-size: 100px;
     color: #ebd7d7;
+    padding: 0;
 }
 
 .todos-main {
     margin: auto;
     background-color: #fff;
     width: 560px;
-    box-shadow: 0 4px 8px #e0e0e0;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Add todos */
 
 .todos-add {
-    height: 60px;
+    height: 63px;
     border-bottom: solid 1px #e6e6e6;
 }
 
 .todo-add_select-all {
     float: left;
+    cursor: pointer;
     width: 24px;
     height: 24px;
     margin: 18px;
-    background: url('../images/select-all.png') no-repeat center;
+    background: url('../images/select-all.png') no-repeat 0 10px;
     border: none;
     outline: none;
     padding: 0;
@@ -38,7 +46,7 @@ body {
     margin-top: 15px;
     font: normal 24px "Arial", sans-serif;
     color: #666;
-    background: transparent;
+    background: none;
     overflow: hidden;
     border: none;
     outline: none;
@@ -46,20 +54,25 @@ body {
 
 .todo-add_input {
     float: right;
-    width: 500px;
+    width: 480px;
+    margin-right: 20px;
 }
+
 .todo-add_input::-webkit-input-placeholder {
     color: #ccc;
     font-style: italic;
 }
+
 .todo-add_input:-ms-input-placeholder {
     color: #ccc;
     font-style: italic;
 }
+
 .todo-add_input::-moz-placeholder {
     color: #ccc;
     font-style: italic;
 }
+
 .todo-add_input:-moz-placeholder {
     color: #ccc;
     font-style: italic;
@@ -68,7 +81,7 @@ body {
 /* Todos list */
 
 .todos-list {
-    min-height: 300px;
+    min-height: 296px;
 }
 
 .todo-item {
@@ -81,21 +94,49 @@ body {
 }
 
 .todo-item_complete {
-    width: 36px;
-    height: 36px;
-    margin: 12px 11px;
-    background: url('../images/completed.png');
+    display: none;
+}
+
+.todo-item_complete + label {
     float: left;
+    cursor: pointer;
+    background: none;
+    border: solid 1px #ccc;
+    border-radius: 18px;
+    width: 34px;
+    height: 34px;
+    margin: 12px 11px;
+    display: inline-block;
+    padding: 0;
+}
+
+.todo-item_complete:checked + label {
+    background: url('../images/completed.png') center no-repeat;
+    border: solid 1px #5dc2af;
 }
 
 .todo-item_text {
+    margin-left: -2px;
     width: 466px;
     height: 35px;
     resize: none;
 }
 
+/*
+.todo-item.__ready .todo-item_text {
+    color: #ccc;
+    text-decoration: line-through;*
+}
+*/
+
+.todo-item_complete:checked ~ .todo-item_text {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
 .todo-item_remove {
     float: right;
+    cursor: pointer;
     width: 18px;
     height: 18px;
     margin-top: 21px;
@@ -119,7 +160,7 @@ body {
 /* Action bar */
 
 .todos-actions-bar {
-    height: 40px;
+    height: 39px;
     border-top: solid 1px #e6e6e6;
 }
 
@@ -132,26 +173,57 @@ body {
 }
 
 .todos-filtrs {
+    margin-left: auto;
     display: inline-block;
+    overflow: hidden;
 }
 
 .todos-filter, .todos-actions-bar_clear-completed {
+    cursor: pointer;
+    margin: 12px 8px;
     padding: 0;
+    background: none;
     outline: none;
+    border: none;
     font-size: 14px;
     color: #888;
-    margin: 12px;
-    border: none;
-    background: transparent;
 }
 
+.todos-filter:hover,
 .todos-filter.__active {
-    margin-top: 6px;
-    border-radius: 4px;
-    padding: 5px 8px;
+    margin: 8px 0;
+    border-radius: 3px;
+    padding: 3px 7px;
     border: solid 1px #ebdfdf;
 }
 
 .todos-actions-bar_clear-completed {
     float: right;
+}
+
+.todos-actions-bar:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Todos bottom */
+
+.todos-bottom1,
+.todos-bottom2 {
+    margin: auto;
+    background-color: #fff;
+    height: 5px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.todos-bottom1 {
+    width: 556px;
+    z-index: 1;
+}
+
+.todos-bottom2 {
+    width: 554px;
+    z-index: 0;
 }
