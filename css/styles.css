@@ -26,7 +26,7 @@ body {
 /* Add todos */
 
 .todos-add {
-    height: 63px;
+    height: 62px;
     border-bottom: solid 1px #e6e6e6;
 }
 
@@ -86,7 +86,7 @@ body {
 
 .todo-item {
     border-bottom: solid 1px #e6e6e6;
-    height: 59px;
+    min-height: 57px;
 }
 
 .todo-item:hover {
@@ -116,10 +116,11 @@ body {
 }
 
 .todo-item_text {
-    margin-left: -2px;
+    text-align: left;
     width: 466px;
-    height: 35px;
-    resize: none;
+    height: 100%;
+    margin: 0;
+    padding: 16px 0;
 }
 
 /*
@@ -129,6 +130,7 @@ body {
 }
 */
 
+/* instead of previous */
 .todo-item_complete:checked ~ .todo-item_text {
     color: #ccc;
     text-decoration: line-through;
