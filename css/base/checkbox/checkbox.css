@@ -1,0 +1,9 @@
+.checkbox {
+    display: none;
+}
+
+.checkbox + label {
+    float: left;
+    cursor: pointer;
+    display: inline-block;
+}

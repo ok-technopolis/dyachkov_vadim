@@ -1,0 +1,9 @@
+.text-input {
+    text-align: left;
+    font: normal 24px "Arial", sans-serif;
+    color: #666;
+    background: none;
+    overflow: hidden;
+    border: none;
+    outline: none;
+}
