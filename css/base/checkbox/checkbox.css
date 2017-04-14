@@ -1,9 +1,21 @@
-.checkbox {
-    display: none;
+.input-checkbox {
+    position: relative;
+    /*width: 64px;*/
+    /*height: 64px;*/
 }
-
-.checkbox + label {
-    float: left;
+.input-checkbox_target {
     cursor: pointer;
-    display: inline-block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.input-checkbox_visual {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }

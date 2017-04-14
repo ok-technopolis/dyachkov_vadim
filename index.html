@@ -30,29 +30,38 @@
     </div>
     <div class="todo-list">
         <div class="todo-item">
-            <input type="checkbox" id="item1" class="checkbox todo-item_complete"
-                   aria-label="Отметить как выполненное"/><label for="item1"></label>
+            <div class="input-checkbox todo-item_complete">
+                <input type="checkbox" class="input-checkbox_target" aria-label="Отметить todo как невыполненное"/>
+                <div class="input-checkbox_visual"></div>
+            </div>
             <button class="button todo-item_remove"
                     aria-label="Удалить todo"></button>
             <div class="text-input todo-item_text" contentEditable="true">HTML</div>
         </div>
         <div class="todo-item __ready">
-            <input type="checkbox" id="item2" checked="checked" class="checkbox todo-item_complete"
-                   aria-label="Отметить todo как невыполненное"/><label for="item2"></label>
+            <div class="input-checkbox todo-item_complete">
+                <input type="checkbox" class="input-checkbox_target" checked="checked"
+                       aria-label="Отметить todo как невыполненное"/>
+                <div class="input-checkbox_visual" style="order: 2;"></div>
+            </div>
             <button class="button todo-item_remove"
                     aria-label="Удалить todo"></button>
             <div class="text-input todo-item_text" contentEditable="true">CSS</div>
         </div>
         <div class="todo-item">
-            <input type="checkbox" id="item3" class="checkbox todo-item_complete"
-                   aria-label="Отметить todo как выполненное"/><label for="item3"></label>
+            <div class="input-checkbox todo-item_complete">
+                <input type="checkbox" class="input-checkbox_target" aria-label="Отметить todo как невыполненное"/>
+                <div class="input-checkbox_visual"></div>
+            </div>
             <button class="button todo-item_remove"
                     aria-label="Удалить todo"></button>
             <div class="text-input todo-item_text" contentEditable="true">JS</div>
         </div>
         <div class="todo-item">
-            <input type="checkbox" id="item4" class="checkbox todo-item_complete"
-                   aria-label="Отметить todo как выполненное"/><label for="item4"></label>
+            <div class="input-checkbox todo-item_complete">
+                <input type="checkbox" class="input-checkbox_target" aria-label="Отметить todo как невыполненное"/>
+                <div class="input-checkbox_visual"></div>
+            </div>
             <button class="button todo-item_remove"
                     aria-label="Удалить todo"></button>
             <div class="text-input todo-item_text" contentEditable="true">JS tools</div>
