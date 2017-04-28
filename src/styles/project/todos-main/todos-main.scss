@@ -1,8 +1,10 @@
+@import "../../config/globals";
+
 .todos-main {
     margin: auto;
-    background-color: #fff;
+    background-color: $c-white;
     width: 560px;
     z-index: 2;
     position: relative;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px $c-gray-transparent;
 }

@@ -1,6 +1,8 @@
+@import "../../config/globals";
+
 .todo-add {
     height: 62px;
-    border-bottom: solid 1px #e6e6e6;
+    border-bottom: solid 1px $c-gray-light;
 }
 
 .todo-add_select-all {
@@ -20,21 +22,21 @@
 }
 
 .todo-add_input::-webkit-input-placeholder {
-    color: #ccc;
+    color: $c-gray;
     font-style: italic;
 }
 
 .todo-add_input:-ms-input-placeholder {
-    color: #ccc;
+    color: $c-gray;
     font-style: italic;
 }
 
 .todo-add_input::-moz-placeholder {
-    color: #ccc;
+    color: $c-gray;
     font-style: italic;
 }
 
 .todo-add_input:-moz-placeholder {
-    color: #ccc;
+    color: $c-gray;
     font-style: italic;
 }

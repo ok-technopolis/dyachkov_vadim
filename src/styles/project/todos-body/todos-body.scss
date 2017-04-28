@@ -1,5 +1,7 @@
+@import "../../config/globals";
+
 .todos-body {
-    background: #f5f5f5;
+    background: $c-gray-very-light;
     text-align: center;
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
