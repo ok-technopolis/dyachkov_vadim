@@ -1,8 +1,11 @@
+@import "../../config/globals";
+
 .text-input {
     text-align: left;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 100;
-    font-size: 24px;
+    font-size: $fs-xx-large;
+    color: $c-gray-dark;
     background: none;
     overflow: hidden;
     border: none;

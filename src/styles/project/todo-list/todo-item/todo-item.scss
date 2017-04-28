@@ -6,7 +6,7 @@
 }
 
 .todo-item:hover {
-    background: $c-gray-very-light;
+    background: $c-todos-main-bg;
 }
 
 .todo-item_complete {
@@ -36,7 +36,6 @@
     height: 100%;
     margin: 0;
     padding: 16px 0;
-    color: $c-gray-dark;
 }
 
 .todo-item.__ready .todo-item_text {
