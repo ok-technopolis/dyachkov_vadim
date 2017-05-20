@@ -1,8 +1,9 @@
 @import "../../config/globals";
 
-.todos-actions-bar {
+.todos-action-bar {
     height: 39px;
-    border-top: solid 5px $c-gray-light;
+    border-top: solid 1px $c-gray-light;
+    text-align: center;
 }
 
 .todos-action-bar_counter {
@@ -17,7 +18,7 @@
     float: right;
 }
 
-.todos-actions-bar:after {
+.todos-action-bar:after {
     content: '';
     display: block;
     clear: both;

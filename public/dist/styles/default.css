@@ -34,17 +34,17 @@ textarea,
 input,
 select,
 button {
-  color: #333;
+  color: #888;
   font-family: Helvetica, sans-serif;
 }
 
 body,
 a {
-  color: #666;
+  color: #ccc;
 }
 
 body {
-  background: #fff;
+  background: #fafafa;
 }
 
 ul,
@@ -63,23 +63,21 @@ table {
 
 a {
   cursor: pointer;
-  color: #333;
+  color: #888;
 }
 
-/* /Reset.css
----------------------------------------------------------------------------------- */
-
-.button {
+button {
   background: none;
   outline: none;
   border: none;
   cursor: pointer;
 }
 
+/* /Reset.css
+---------------------------------------------------------------------------------- */
+
 .input-checkbox {
   position: relative;
-  /*width: 64px;*/
-  /*height: 64px;*/
 }
 
 .input-checkbox_target {
@@ -105,7 +103,7 @@ a {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-weight: 100;
   font-size: 24px;
-  color: #666;
+  color: #888;
   background: none;
   overflow: hidden;
   border: none;
@@ -182,7 +180,7 @@ a {
 }
 
 .input-checkbox_target:checked ~ .input-checkbox_visual {
-  background: url("../../images/completed.png") center no-repeat;
+  background: url("../images/completed.png") center no-repeat;
   border: solid 1px #5dc2af;
 }
 
@@ -206,7 +204,7 @@ a {
   width: 18px;
   height: 18px;
   margin: 21px 12px;
-  background: url("../../images/close.png") center no-repeat;
+  background: url("../images/close.png") center no-repeat;
   opacity: 0;
 }
 
@@ -220,9 +218,10 @@ a {
   clear: both;
 }
 
-.todos-actions-bar {
+.todos-action-bar {
   height: 39px;
-  border-top: solid 5px #e6e6e6;
+  border-top: solid 1px #e6e6e6;
+  text-align: center;
 }
 
 .todos-action-bar_counter {
@@ -237,7 +236,7 @@ a {
   float: right;
 }
 
-.todos-actions-bar:after {
+.todos-action-bar:after {
   content: '';
   display: block;
   clear: both;
@@ -262,11 +261,11 @@ a {
   margin: 8px 0;
   border-radius: 3px;
   padding: 3px 7px;
-  border: solid 1px #ebdfdf;
+  border: solid 1px #ebd7d7;
 }
 
 .todos-body {
-  background: #f5f5f5;
+  background: #fafafa;
   text-align: center;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
@@ -290,12 +289,14 @@ a {
 }
 
 .todos-header {
-  margin-bottom: -8px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .todos-header .todos-title {
   font-size: 100px;
   color: #ebd7d7;
+  margin: 0 auto;
   padding: 0;
 }
 
